@@ -1,144 +1,69 @@
-# 🚀 ExtremeUltraCleaner
+# Extreme Ultra Deep Cleaner - PRO
 
-**ExtremeUltraCleaner** is a high-performance Windows system cleaning utility built with **C# (.NET 8)** and **WPF**, designed for **power users, gamers, and developers** who want deep cleanup with maximum speed and safety.
+## 🚀 Quick Start
 
-> ⚡ Fast • 🛡️ Safe • 🎨 Modern UI • 🧠 Smart Performance
+### Build & Run
 
----
+```powershell
+cd d:\GitHub_Project\ExtremeUltraCleaner\ExtremeUltraDeepCleaner
 
-## ✨ Features
+# Build
+dotnet build -c Release
 
-* 🔥 **Extreme Deep System Cleanup**
-* 🎨 **Modern Dark UI (WPF / Fluent Style)**
-* ⚡ **Async & Multi-Threaded Performance**
-* 🛡️ **Administrator-Protected Operations**
-* 📊 **Live Progress & Status Logging**
-* 🧹 **Safe Cleanup with Smart Checks**
-* 🎮 **Gaming & SSD Friendly**
-
----
-
-## 🧹 Cleaning Capabilities
-
-ExtremeUltraCleaner safely performs the following operations:
-
-1. User & Windows Temp cleanup
-2. Prefetch file cleanup
-3. Windows Update cache removal
-4. Delivery Optimization cleanup
-5. Windows Error Reports removal
-6. Recycle Bin cleanup (all drives)
-7. Thumbnail cache cleanup
-8. Browser cache cleanup (Chrome, Edge, Firefox, Brave, Opera*)
-9. Log file cleanup (safe mode)
-10. DNS cache flush
-11. Windows.old removal (if exists)
-12. Installer patch cache cleanup
-13. Shadow copy & restore point removal (with warning)
-14. Hibernation disable
-15. Pagefile reset (recreated after reboot)
-16. Silent Disk Cleanup execution
-
-> ⚠️ Dangerous operations always require user confirmation.
-
----
-
-## 🧠 Performance Design
-
-* Uses **`async / await`** to prevent UI freezing
-* Background execution for heavy disk operations
-* Parallel execution where safe
-* Smart path detection (skip if not exists)
-* Minimal disk traversal
-* Optimized file enumeration
-
----
-
-## 🧱 Architecture
-
-* **Framework:** .NET 8
-* **UI:** WPF (XAML)
-* **Pattern:** MVVM
-* **Language:** C#
-* **Execution:** Native (no BAT files)
-
-```
-ExtremeUltraCleaner/
-│
-├── UI/
-│   ├── MainWindow.xaml
-│   └── MainWindow.xaml.cs
-│
-├── ViewModels/
-│   └── MainViewModel.cs
-│
-├── Services/
-│   └── CleanerService.cs
-│
-├── Helpers/
-│   └── AdminHelper.cs
-│
-├── App.xaml
-└── ExtremeUltraCleaner.csproj
+# Run (MUST be as Administrator)
+cd bin\Release\net8.0-windows
+.\ExtremeUltraDeepCleaner.exe
 ```
 
----
+### Create Single-File Executable
 
-## 🔐 Administrator Requirement
+```powershell
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
+```
 
-This application **must run as Administrator** to perform deep system cleaning.
-
-Administrator privileges are enforced via:
-
-* Application manifest
-* Runtime permission checks
+Output: `bin\Release\net8.0-windows\win-x64\publish\ExtremeUltraDeepCleaner.exe`
 
 ---
 
-## 🛡️ Safety Notes
+## ⚡ Features
 
-* ❌ No registry cleaning (intentional)
-* ❌ No random file deletion
-* ✅ Only known system locations
-* ✅ Auto-skip on permission errors
-* ✅ Graceful error handling (no crashes)
-
----
-
-## 📦 Build Instructions
-
-1. Open project in **Visual Studio 2022+**
-2. Select **Release | x64**
-3. Build solution
-4. Run as **Administrator**
+✅ **18 Async Cleaning Tasks** - All BAT logic converted to C#  
+✅ **Dark Gaming UI** - Custom title bar, circular + linear progress  
+✅ **MVVM Architecture** - Clean separation of concerns  
+✅ **Non-Blocking UI** - `async/await` throughout  
+✅ **Safety Features** - Admin check + warning dialogs  
+✅ **Real-time Logging** - Live status updates  
+✅ **Summary Statistics** - Files deleted, space freed, time taken  
 
 ---
 
-## 📌 Requirements
+## 🛡️ Safety Warnings
 
-* Windows 10 / 11
-* .NET 8 Runtime
-* Administrator access
-
----
-
-## 📜 Disclaimer
-
-This software performs **advanced system operations**.
-Use at your own risk. The developer is **not responsible** for data loss or system instability caused by misuse.
+> **Tasks 15-17 require confirmation:**
+> - Shadow Copies deletion (restore points)
+> - Hibernation disable (hiberfil.sys)
+> - Pagefile reset (requires reboot)
 
 ---
 
-## ⭐ Contribution
+## 📊 Project Structure
 
-Pull requests, optimizations, and UI improvements are welcome.
-Please follow clean code and MVVM standards.
-
----
-
-## 📄 License
-
-MIT License – free to use, modify, and distribute.
+- `ViewModels/` - MainViewModel, ViewModelBase, RelayCommand
+- `Views/` - MainWindow.xaml (dark theme UI)
+- `Services/` - CleanerService (18 tasks), FileSystemHelper
+- `Models/` - CleaningTask, CleaningSummary, LogEntry
+- `Resources/Styles/` - DarkTheme.xaml
 
 ---
 
+## 🎯 Requirements
+
+- Windows 10/11
+- .NET 8 SDK (for building)
+- Administrator privileges (runtime)
+
+---
+
+## 📖 Full Documentation
+
+See [walkthrough.md](file:///C:/Users/hetti/.gemini/antigravity/brain/2ced7f95-d90b-4cab-b244-733812937bee/walkthrough.md) for complete documentation.
