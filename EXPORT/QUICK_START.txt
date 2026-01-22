@@ -1,0 +1,76 @@
+==========================================
+  EXTREME ULTRA DEEP CLEANER - PRO
+==========================================
+
+VERSION: 1.0.0
+BUILD DATE: January 22, 2026
+
+------------------------------------------
+QUICK START
+------------------------------------------
+
+1. Right-click "ExtremeUltraDeepCleaner.exe"
+2. Select "Run as administrator"
+3. Accept UAC prompt
+4. Click "START DEEP CLEAN"
+
+------------------------------------------
+SYSTEM REQUIREMENTS
+------------------------------------------
+
+• Windows 10 (1809+) or Windows 11
+• Administrator privileges
+• x64 (64-bit) system
+
+------------------------------------------
+WHAT DOES IT CLEAN?
+------------------------------------------
+
+✓ User & Windows Temp folders
+✓ Prefetch cache
+✓ Windows Update cache
+✓ Recycle Bin (all drives)
+✓ Browser caches (Chrome, Firefox, etc.)
+✓ Thumbnail cache
+✓ DNS cache
+✓ System log files
+✓ And 10 more cleaning tasks!
+
+------------------------------------------
+DANGEROUS OPERATIONS (WARNINGS SHOWN)
+------------------------------------------
+
+⚠️ Shadow Copies - Deletes restore points
+⚠️ Hibernation - Disables hibernate mode
+⚠️ Pagefile - Resets Windows pagefile
+
+These require your confirmation before running.
+
+------------------------------------------
+SAFETY FEATURES
+------------------------------------------
+
+✓ Administrator check on startup
+✓ Warning dialogs for risky operations
+✓ Silent error handling (won't crash)
+✓ Auto-skip permission denied errors
+✓ Real-time progress display
+
+------------------------------------------
+FILE SIZE: 71.7 MB
+------------------------------------------
+
+This is a self-contained executable.
+No .NET installation required!
+
+------------------------------------------
+SUPPORT
+------------------------------------------
+
+For more information, see README.txt
+
+------------------------------------------
+LICENSE: Personal/Educational Use
+------------------------------------------
+
+Built with C# .NET 8, WPF, and MVVM
